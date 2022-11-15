@@ -10,7 +10,7 @@ require 'faker'
 puts 'Creating 10 fake poké...'
 10.times do
   article = Article.new(
-    title:    Faker::Games::Pokemon.name,
+    title:   Faker::Games::Pokemon.name,
     content: Faker::Address.city,
   )
   article.save!
